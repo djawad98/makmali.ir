@@ -97,6 +97,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            text-indent: 6px;
             color: white;
             font-size: 24px;
             transition: var(--transition);
@@ -439,22 +440,17 @@
         }
 
         /* MASONRY GRID */
-        .portfolio-grid {
-            display: grid;
-            gap: 30px;
-            margin-bottom: 60px;
-        }
+        
 
-        .grid-sizer {
+        .grid-sizer,.portfolio-item {
             width: calc(33.333% - 20px);
         }
 
         .portfolio-item {
-            position: relative;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 12px;
             cursor: pointer;
-            group: 'item';
+            margin-bottom: 20px;
         }
 
         /* Hide items when filtered out */
@@ -462,26 +458,11 @@
             display: none;
         }
 
-        /* Variable sizing for different portfolio items */
-        .portfolio-item:nth-child(3) {
-            grid-column: span 1;
-            grid-row: span 2;
-        }
-
-        .portfolio-item:nth-child(5) {
-            grid-column: span 1;
-            grid-row: span 2;
-        }
-
-        .portfolio-item:nth-child(7) {
-            grid-column: span 2;
-            grid-row: span 1;
-        }
 
         .portfolio-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            /* object-fit: cover; */
             transition: var(--transition);
         }
 
@@ -837,10 +818,10 @@
             <button class="video-intro-btn" aria-label="Watch Video Introduction">▶</button>
 
             <!-- Profile Section -->
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Profile" class="profile-image">
-            <h1 class="designer-name">Alex Morgan</h1>
-            <p class="designer-title">Creative Director</p>
-            <p class="intro-text">Passionate about creating visually stunning designs that solve real problems. Specialized in branding, UI/UX, and digital experiences.</p>
+            <img src="./makmali.jpg" alt="Profile" class="profile-image">
+            <h1 class="designer-name">Mohammadreza Akmali</h1>
+            <p class="designer-title">Graphic Designer</p>
+            <p class="intro-text">I am a graphic designer with a passion for creating visually stunning designs that solve real problems. Specialized in branding, UI/UX, and digital experiences.</p>
 
             <!-- Navigation -->
             <nav>
@@ -893,7 +874,7 @@
 
                     <!-- Portfolio Items -->
                     <div class="portfolio-item branding" data-category="Branding">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop" alt="Brand Identity">
+                        <img src="https://picsum.photos/350/650" alt="Brand Identity">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Brand Identity</div>
@@ -903,7 +884,7 @@
                     </div>
 
                     <div class="portfolio-item ui-ux" data-category="UI/UX">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop" alt="Mobile App Design">
+                        <img src="https://picsum.photos/360/200" alt="Mobile App Design">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Mobile App Design</div>
@@ -913,7 +894,7 @@
                     </div>
 
                     <div class="portfolio-item packaging" data-category="Packaging">
-                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop" alt="Luxury Packaging">
+                        <img src="https://picsum.photos/460/250" alt="Luxury Packaging">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Luxury Packaging</div>
@@ -923,7 +904,7 @@
                     </div>
 
                     <div class="portfolio-item digital" data-category="Digital Art">
-                        <img src="https://images.unsplash.com/photo-1569163139394-de4798aa62b3?w=400&h=400&fit=crop" alt="Abstract Illustration">
+                        <img src="https://picsum.photos/480/270" alt="Abstract Illustration">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Abstract Illustration</div>
@@ -933,7 +914,7 @@
                     </div>
 
                     <div class="portfolio-item branding" data-category="Branding">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop" alt="Logo Design">
+                        <img src="https://picsum.photos/560/360" alt="Logo Design">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Logo Design</div>
@@ -943,7 +924,7 @@
                     </div>
 
                     <div class="portfolio-item ui-ux" data-category="UI/UX">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop" alt="Website Redesign">
+                        <img src="https://picsum.photos/400/600" alt="Website Redesign">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Website Redesign</div>
@@ -953,7 +934,7 @@
                     </div>
 
                     <div class="portfolio-item digital" data-category="Digital Art">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop" alt="3D Visualization">
+                        <img src="https://picsum.photos/800/450" alt="3D Visualization">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">3D Visualization</div>
@@ -963,7 +944,7 @@
                     </div>
 
                     <div class="portfolio-item packaging" data-category="Packaging">
-                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop" alt="Product Packaging">
+                        <img src="https://picsum.photos/600/400" alt="Product Packaging">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Product Packaging</div>
@@ -973,7 +954,7 @@
                     </div>
 
                     <div class="portfolio-item branding" data-category="Branding">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop" alt="Brand Guidelines">
+                        <img src="https://picsum.photos/900/500" alt="Brand Guidelines">
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-title">Brand Guidelines</div>
@@ -1005,8 +986,8 @@
         <div class="video-modal-content">
             <button class="video-modal-close" aria-label="Close">&times;</button>
             <!-- Replace src with your video URL -->
-            <video controls>
-                <source src="https://commondatastorage.googleapis.com/gtv-videos-library/sample/BigBuckBunny.mp4" type="video/mp4">
+            <video controls preload="metadata">
+                <source src="./makmali.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -1030,15 +1011,19 @@
         const videoIntroBtn = document.querySelector('.video-intro-btn');
         const videoModal = document.getElementById('video-modal');
         const videoModalClose = document.querySelector('.video-modal-close');
+        const videoEl = document.querySelector('video');
 
         videoIntroBtn.addEventListener('click', () => {
             videoModal.classList.add('active');
             document.body.style.overflow = 'hidden';
+            videoEl.currentTime = 0;
+            videoEl.play();
         });
 
         videoModalClose.addEventListener('click', () => {
             videoModal.classList.remove('active');
             document.body.style.overflow = 'auto';
+            videoEl.pause();
         });
 
         videoModal.addEventListener('click', (e) => {
@@ -1062,7 +1047,8 @@
                 itemSelector: '.portfolio-item',
                 layoutMode: 'masonry',
                 masonry: {
-                    columnWidth: '.grid-sizer'
+                    columnWidth: '.grid-sizer',
+                    gutter: 20,
                 },
                 transitionDuration: '0.6s'
             });
